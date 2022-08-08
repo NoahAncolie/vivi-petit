@@ -1,0 +1,100 @@
+:root {
+    --blue: #4F65A9;
+    --light-blue: #909FCB;
+    --dark-blue: #41548B;
+    --gray: #C8CBD4;
+    --light-gray: #E8E9ED;
+    --dark-gray: #AFB3C0;
+    --light1: #F8F3E5;
+    --light2: #F2EFE4;
+    --light2-transparent: #f2efe4c1;
+    --purple: #5E3880;
+    --light-purple: #8855B4;
+    --light-transparent-purple: #8855b4c1;
+    --dark-purple: #341F47;
+}
+
+@font-face {
+    font-family: 'Durer' ;
+    src: url('../assets/fonts/Durer.ttf') format('truetype'),
+        url('../assets/fonts/Durer.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bosch';
+    src: url('../assets/fonts/Bosch.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bosch-font {
+    font-family: Bosch;
+}
+
+.text-light {
+    color: var(--light2);
+}
+
+.banner {
+    background-color: var(--light2);
+    color: var(--blue);
+    font-family: 'Times New Roman', Times, serif !important;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.email-link {
+    color: var(--blue);
+    transition: ease-in-out 0.2s;
+}
+
+.email-link:hover {
+    color: var(--light-purple);
+}
+
+.nav-link:link, .nav-link:visited {
+    display: block;
+    padding: 50px 0;
+    background-color: var(--light2);
+    color: var(--blue);
+    transition: ease-in-out 0.2s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    width: 25vw;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+}
+
+.nav-link:active, .nav-link:hover {
+    background-color: var(--light-transparent-purple);
+    color: var(--light2);
+}
+
+// .square-nav {
+//     width: 100%;
+//     position: fixed;
+//     top: 200px;
+//     right: 50px;
+//     width: calc(50vw + 4 * 20px);
+// }
+
+.square-nav a {
+    margin: 20px;
+}
+
+.side-nav {
+    width: 25vw;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: 0.5s ease-in-out;
+}

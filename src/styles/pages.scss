@@ -1,0 +1,44 @@
+.lawyer-frame {
+    width: 25vw;
+    height: 70vh;
+    //background-color: var(--blue);
+    margin: 140px 100px;
+    transition: 0.5s ease-in-out;
+    //box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.slideOut {
+    transform: translateX(-200%);
+}
+
+.home-bg {
+    background-image: url('../assets/images/palais-de-justice.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.viviane-petit-avocat-cholet {
+    width: calc(100%);
+    border-radius: 3px;
+    padding: 10px;
+    // border: 2px solid var(--light-transparent-purple);
+}
+
+.lawyer-info {
+    margin: 0 60px;
+    padding-top: 20px;
+    border-top: 2px solid var(--light2);
+}
+
+.red {
+    background-color: red;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+}
