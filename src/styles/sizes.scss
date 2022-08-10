@@ -119,12 +119,16 @@ $container-max-width: (
         padding-top: 300px;
     }
 
-    .lg-title-xxl {
+    .md-title-xxl {
         font-size: 80px;
     }
 
-    .lg-title-xl {
+    .md-title-xl {
         font-size: 60px;
+    }
+
+    .md-title-l {
+        font-size: 40px;
     }
 
     .md-text-xxl {
@@ -170,6 +174,10 @@ $container-max-width: (
 
     .lg-title-xl {
         font-size: 80px;
+    }
+
+    .lg-title-l {
+        font-size: 60px;
     }
 
     .lg-padding-20 {
@@ -223,6 +231,10 @@ $container-max-width: (
 
 .height-half {
     @include set-height($half)
+}
+
+.vh-full {
+    height: 100vh;
 }
 
 // ------------- BACKROUNDS -------------
