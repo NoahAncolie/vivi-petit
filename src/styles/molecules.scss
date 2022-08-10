@@ -31,7 +31,14 @@
         overflow: hidden;
     }
 
-    .md-small-picture img {
+    .sm-medium-picture {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .md-small-picture img,
+    .md-medium-picture img {
         width: 100%;
     }
 }

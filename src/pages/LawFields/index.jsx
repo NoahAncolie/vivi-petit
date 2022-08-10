@@ -2,7 +2,7 @@ import Banner from "../../components/Banner"
 
 const LawFields = () => {
     return (
-        <Banner/>
+        <div>Expertises</div>
     )
 }
 

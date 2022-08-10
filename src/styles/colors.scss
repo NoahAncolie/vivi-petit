@@ -16,3 +16,19 @@
 .svg-fill-light svg{
     fill: var(--light);
 } 
+
+// ------------- TEXTS -------------
+
+.text-black {
+    color: black !important;
+}
+
+// ------------- LINKS -------------
+
+.link-text-black:link,  .link-text-black:visited {
+    color: black !important;
+}
+
+.hover-text-white:hover, .hover-text-white:active {
+    color: var(--light) !important;
+}
