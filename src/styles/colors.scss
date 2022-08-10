@@ -1,0 +1,18 @@
+// ------------- BORDERS -------------
+
+.border-light {
+    border-color: var(--light);
+}
+
+// ------------- BACKROUNDS -------------
+
+.bg-main {
+    background-color: var(--main);
+    color: var(--light)
+}
+
+// ------------- SVGS -------------
+
+.svg-fill-light svg{
+    fill: var(--light);
+} 

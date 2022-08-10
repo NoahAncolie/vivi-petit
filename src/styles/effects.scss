@@ -1,0 +1,36 @@
+.hover-up:hover {
+    box-shadow: 3px 3px 2px var(--blue) inset, -3px -3px 2px var(--light-blue) inset;
+}
+
+link {
+    background: 
+      linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  link:hover,
+  link:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+
+  .fade {
+    opacity: 0;
+    animation: fade 1s ease-in-out;
+  }
+
+  @keyframes fade {
+    0% {opacity: 100%;}
+  }
+
+  .translate-x {
+    transform: translateX(200%);
+    animation: translateX 1s ease-in-out;
+  }
+
+  @keyframes translateX {
+    0% {transform: translateX(0%);}
+  }

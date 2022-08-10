@@ -1,0 +1,120 @@
+@media (max-width: 600px) {
+    .sm-text-center {
+        text-align: center
+    }
+}
+
+@media (max-width: 1280px) {
+    .md-text-center {
+        text-align: center
+    }
+
+    .md-flex {
+        display: flex;
+    }
+
+    .md-center {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .lg-text-center {
+        text-align: center
+    }
+
+    .lg-flex {
+        display: flex;
+    }
+
+    .lg-center {
+        align-items: center;
+    }
+}
+
+// ------------- DISPLAYS -------------
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+// ------------- POSITIONS -------------
+
+.fix {
+    position:fixed;
+}
+
+.top-2 {
+    top: 20px;
+}
+
+.bottom-2 {
+    bottom: 20px;
+}
+
+.right-2 {
+    right: 20px;
+}
+
+.left-2 {
+    left: 20px;
+}
+
+.top-3 {
+    top: 30px;
+}
+
+.right-3 {
+    right: 30px;
+}
+
+.top-4 {
+    top: 40px;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.center-fix {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+// ------------- JUSTIFY -------------
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+// ------------- TEXT-POSITION -------------
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// ------------- Z-INDEX -------------
+
+.z-5 {
+    z-index: 500;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}

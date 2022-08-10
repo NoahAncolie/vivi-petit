@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+    .sm-underline-1 {
+        border-bottom: solid 1px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .md-underline-1 {
+        border-bottom: solid 1px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .lg-underline-1 {
+        border-bottom: solid 1px;
+    }
+}

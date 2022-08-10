@@ -1,6 +1,8 @@
+import Banner from "../../components/Banner"
+
 const LawFields = () => {
     return (
-        <div></div>
+        <Banner/>
     )
 }
 

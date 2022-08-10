@@ -1,0 +1,317 @@
+// ------------- SIZES -------------
+
+$full: 100% !important;
+$half: 50% !important;
+$one-fourth: 25% !important;
+$three-fourth: 75% !important;
+$one-third: calc(100% / 3) !important;
+
+$breakpoints: (
+    xs: 0, 
+    sm: 600px, // mobile landscape, tablet (portrait)
+    md: 1024px, // chromebooks, ipad pro (portrait), tablet (landscape)
+    lg: 1600px, // most laptops and desktops
+    xl: 2048px // 2k and up
+);
+
+$container-max-width: (
+    xs: 480px, 
+    sm: 960px,
+    md: 1280px, 
+    lg: 1920px,
+    xl: 3840px
+);
+
+// ------------- MIXINS -------------
+
+// WIDTH
+@mixin set-width($size) {
+    width: $size;
+}
+
+//HEIGHT
+@mixin set-height($size) {
+    height: $size;
+}
+
+// ------------- SMALL -------------
+
+@media (max-width: 600px) {
+    .sm-width-full {
+        @include set-width($full);
+    }
+
+    .sm-height-full {
+        @include set-height($full);
+    }
+
+    .sm-hidden-h {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .sm-width-auto {
+        width: auto;
+    }
+
+    .sm-padding-20 {
+        padding: 200px;
+    }
+
+    .sm-padding-top-20 {
+        padding-top: 200px;
+    }
+
+    .sm-padding-top-30 {
+        padding-top: 300px;
+    }
+
+    .sm-text-xxl {
+        font-size: xx-large;
+    }
+    
+    .sm-text-xl {
+        font-size: x-large;
+    }
+    
+    .sm-text-l {
+        font-size: large;
+    }
+}
+
+// ------------- MEDIUM -------------
+
+@media (max-width: 1280px) and (min-width: 600px) {
+    .md-width-full {
+        @include set-width($full);
+    }
+
+    .md-width-half {
+        @include set-width($half);
+    }
+
+    .md-width-third {
+        @include set-width($one-third)
+    }
+
+    .md-height-full {
+        @include set-height($full)
+    }
+
+    .md-height-half {
+        @include set-height($half)
+    }
+
+    .md-hidden-h {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .md-padding-20 {
+        padding: 200px;
+    }
+
+    .md-padding-top-20 {
+        padding-top: 200px;
+    }
+
+    .md-padding-top-30 {
+        padding-top: 300px;
+    }
+
+    .lg-title-xxl {
+        font-size: 80px;
+    }
+
+    .lg-title-xl {
+        font-size: 60px;
+    }
+
+    .md-text-xxl {
+        font-size: xx-large;
+    }
+    
+    .md-text-xl {
+        font-size: x-large;
+    }
+    
+    .md-text-l {
+        font-size: large;
+    }
+}
+
+// ------------- LARGE -------------
+
+@media (min-width: 1280px) {
+    .lg-width-full {
+        @include set-width($full);
+    }
+
+    .lg-width-half {
+        @include set-width($half)
+    }
+
+    .lg-height-full {
+        @include set-height($full)
+    }
+    
+    .lg-height-half {
+        @include set-height($half)
+    }
+
+    .lg-hidden-h {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .lg-title-xxl {
+        font-size: 100px;
+    }
+
+    .lg-title-xl {
+        font-size: 80px;
+    }
+
+    .lg-padding-20 {
+        padding: 200px;
+    }
+
+    .lg-padding-top-20 {
+        padding-top: 200px;
+    }
+
+    .lg-padding-top-30 {
+        padding-top: 300px;
+    }
+
+    .lg-text-xxl {
+        font-size: xx-large;
+    }
+    
+    .lg-text-xl {
+        font-size: x-large;
+    }
+    
+    .lg-text-l {
+        font-size: large;
+    }
+}
+
+// ------------- WIDTHS -------------
+
+.width-full {
+    @include set-width($full);
+}
+
+.width-half {
+    @include set-width($half)
+}
+
+.width-three-fourth {
+    @include set-width($three-fourth)
+}
+
+.width-third {
+    @include set-width(($one-third))
+}
+
+// ------------- HEIGHTS -------------
+
+.height-full {
+    @include set-height($full)
+}
+
+.height-half {
+    @include set-height($half)
+}
+
+// ------------- BACKROUNDS -------------
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    z-index: -5;
+}
+
+.bg-layer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+// ------------- PADDINGS -------------
+
+.padding-1 {
+    padding: 10px;
+}
+
+.padding-2 {
+    padding: 20px;
+}
+
+.padding-5 {
+    padding: 50px;
+}
+
+// ------------- MARGINS -------------
+
+.margin-1 {
+    margin: 10px;
+}
+
+.margin-2 {
+    margin: 20px;
+}
+
+.margin-5 {
+    margin: 50px;
+}
+
+.margin-left-1 {
+    margin-left: 10px;
+}
+
+.margin-left-2 {
+    margin-left: 20px;
+}
+
+.margin-left-5 {
+    margin-left: 50px;
+}
+
+// ------------- SVGS -------------
+
+.svg-size-2 svg {
+    width: 20px;
+    height: 20px;
+}
+
+.svg-size-3 svg {
+    width: 30px;
+    height: 30px;
+}
+
+.svg-size-4 svg {
+    width: 40px;
+    height: 40px;
+}
+
+// ------------- TEXTS -------------
+
+.text-xxl {
+    font-size: xx-large;
+}
+
+.text-xl {
+    font-size: x-large;
+}
+
+.text-l {
+    font-size: large;
+}
+
+// ------------- RADIUS -------------
+
+.round {
+    border-radius: 50%;
+}

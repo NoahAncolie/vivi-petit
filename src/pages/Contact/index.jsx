@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <div className="col-4 red">Hello</div>
+        <div className="h-full bg-indigo-600">Contact</div>
     )
 }
 

@@ -1,18 +1,31 @@
 :root {
-    --blue: #4F65A9;
-    --light-blue: #909FCB;
-    --dark-blue: #41548B;
-    --gray: #C8CBD4;
+    --main: #1A1617;
+    --blue: #023e8a;
+    --light-blue: #0077b6;
+    --dark-blue: #03045e;
+    --gray: #caf0f8;
     --light-gray: #E8E9ED;
     --dark-gray: #AFB3C0;
-    --light1: #F8F3E5;
-    --light2: #F2EFE4;
+    --light1: #FFF;
+    --light2: #FFF;
     --light2-transparent: #f2efe4c1;
     --purple: #5E3880;
     --light-purple: #8855B4;
     --light-transparent-purple: #8855b4c1;
     --dark-purple: #341F47;
 }
+
+@import './colors.scss',
+        './borders.scss',
+        './navbar.scss',
+        './pages.scss',
+        './sizes.scss',
+        './display.scss',
+        './decorations.scss',
+        './molecules.scss',
+        './effects.scss',
+        './vivi-bg.scss';
+
 
 @font-face {
     font-family: 'Durer' ;
@@ -25,9 +38,20 @@
     src: url('../assets/fonts/Bosch.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Uni';
+    src: url('../assets/fonts/UniSansThin.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Adequate' ;
+    src: url('../assets/fonts/Adequate-ExtraLight.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Adequate', 'Times New Roman', Times, serif, Helvetica, Arial;
 }
 
 .bosch-font {
@@ -35,66 +59,5 @@
 }
 
 .text-light {
-    color: var(--light2);
-}
-
-.banner {
-    background-color: var(--light2);
-    color: var(--blue);
-    font-family: 'Times New Roman', Times, serif !important;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.email-link {
-    color: var(--blue);
-    transition: ease-in-out 0.2s;
-}
-
-.email-link:hover {
-    color: var(--light-purple);
-}
-
-.nav-link:link, .nav-link:visited {
-    display: block;
-    padding: 50px 0;
-    background-color: var(--light2);
-    color: var(--blue);
-    transition: ease-in-out 0.2s;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    width: 25vw;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
-}
-
-.nav-link:active, .nav-link:hover {
-    background-color: var(--light-transparent-purple);
-    color: var(--light2);
-}
-
-// .square-nav {
-//     width: 100%;
-//     position: fixed;
-//     top: 200px;
-//     right: 50px;
-//     width: calc(50vw + 4 * 20px);
-// }
-
-.square-nav a {
-    margin: 20px;
-}
-
-.side-nav {
-    width: 25vw;
-}
-
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    transition: 0.5s ease-in-out;
+    color: var(--light);
 }
