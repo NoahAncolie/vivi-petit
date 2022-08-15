@@ -11,6 +11,11 @@
     color: var(--light)
 }
 
+.bg-light {
+    background-color: var(--light);
+    color: black;
+}
+
 // ------------- SVGS -------------
 
 .svg-fill-light svg{
@@ -23,12 +28,40 @@
     color: black !important;
 }
 
+.text-light {
+    color: var(--light);
+}
+
+// ------------- FILLS -------------
+
+.fill-black svg {
+    fill: black !important;
+}
+
+.fill-light svg {
+    fill: var(--light) !important;
+}
+
+.fill-blue svg {
+    fill: var(--blue)
+}
+
 // ------------- LINKS -------------
 
 .link-text-black:link,  .link-text-black:visited {
     color: black !important;
 }
 
+.link-text-dark:link,  .link-text-dark:visited {
+    color: var(--dark-blue) !important;
+}
+
 .hover-text-white:hover, .hover-text-white:active {
     color: var(--light) !important;
+}
+
+// ------------- TEXT-SHADOWS -------------
+
+.text-black-shadow {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }

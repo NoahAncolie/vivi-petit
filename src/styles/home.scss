@@ -1,0 +1,63 @@
+.home-img {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.home-hero { 
+    height: 50vh;
+}
+
+.home-img-frame {
+    object-fit: cover;
+}
+
+#canvas {
+    z-index: 10;
+    border: 1px solid orange;
+}
+
+#flowmap {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid plum;
+}
+
+#flowmap img {
+    display: none;
+}
+
+
+.cta-link:link, .cta-link:visited {
+    background: linear-gradient(to left, var(--blue), var(--blue));
+    color: var(--light);
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    background-size: 0% 100%;
+    background-repeat:no-repeat;
+    animation: hilight 5s ease-in-out infinite;
+}
+
+.cta-link:active, .cta-link:hover {
+    // background-color: var(--blue);
+    padding: 5px;
+    background-size: 100% 100% ;
+    animation: none;
+}
+
+@keyframes hilight {
+    0% {background-position: 0% 100%;}
+    40% { background-position: 0% 100%; background-size: 100% 100% ;}
+    60% { background-position: 100% 0%; background-size: 100% 100% ;}
+    100% { background-position: 100% 0%}
+}
+
+.hilighted-blue {
+    text-decoration: underline var(--light) 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.hilighted-blue:hover {
+    text-decoration: underline var(--blue) 2px;
+}

@@ -1,6 +1,7 @@
 :root {
     --main: #1A1617;
-    --blue: #023e8a;
+    --blue: #0077b6;
+    --middle-blue: #023e8a;
     --light-blue: #0077b6;
     --dark-blue: #03045e;
     --gray: #caf0f8;
@@ -24,7 +25,8 @@
         './decorations.scss',
         './molecules.scss',
         './effects.scss',
-        './vivi-bg.scss';
+        './vivi-bg.scss',
+        './home.scss';
 
 
 @font-face {
