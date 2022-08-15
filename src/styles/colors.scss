@@ -65,3 +65,9 @@
 .text-black-shadow {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
+
+// ------------- Gradients -------------
+
+.gradient-purple {
+    background: linear-gradient(to right, var(--purple), var(--dark-purple));
+}

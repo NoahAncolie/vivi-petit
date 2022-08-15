@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { useAtomValue } from "jotai"
+import { JWT } from "../../stores/user"
+import marioCoin from "../../assets/sounds/coin.wav"
 import Home from "../../pages/Home"
 import Contact from "../../pages/Contact"
 import LawFields from "../../pages/LawFields"
@@ -10,9 +13,10 @@ import DropUpMenu from "../Nav/DropUpMenu"
 import "../../styles/pages.scss"
 
 const Router = () => {
-    
-    const [dropUp, setDropUp] = useState(false)
 
+    const [dropUp, setDropUp] = useState(false)
+    const JwtUser = useAtomValue(JWT)
+    const clickSound = new Audio(marioCoin)
 
     const toggleDropDown = () => {
         document.getElementById('dropDownMenu').classList.toggle('collapse-menu')
@@ -35,14 +39,20 @@ const Router = () => {
         }, 100)
     }
 
+    const playSound = () => {
+        clickSound.volume = 0.3
+        clickSound.currentTime = 0
+        clickSound.play()
+    }
+
     return (
         <div className="router">
             <BrowserRouter>
-                <DropDownMenu goTo={goToPlace} />
-                <div className='menu-burger lg-hidden-h z-5' onClick={() => { toggleDropDown() }}>
-                    <div className='menu-bar grow1'></div>
-                    <div className='menu-bar grow2'></div>
-                    <div className='menu-bar grow3'></div>
+                <DropDownMenu goTo={goToPlace} JwtUser={JwtUser} playSound={playSound}/>
+                <div className='menu-burger lg-hidden-h z-5' onClick={() => { toggleDropDown(); }}>
+                    <div className={`menu-bar grow1 ${JwtUser ? "grow1-purple" : "grow1"}`}></div>
+                    <div className={`menu-bar grow2 ${JwtUser ? "grow2-purple" : "grow2"}`}></div>
+                    <div className={`menu-bar grow3 ${JwtUser ? "grow3-purple" : "grow3"}`}></div>
                 </div>
                 <Routes>
                     <Route path="/" element={<Home goTo={goToPlace} />} />
@@ -51,7 +61,7 @@ const Router = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/articles" element={<Articles />} />
                 </Routes>
-                <DropUpMenu goTo={goToPlace} invertArrows={invertArrows}/>
+                <DropUpMenu goTo={goToPlace} invertArrows={invertArrows} JwtUser={JwtUser} />
                 <div className='drop-up-toggle md-hidden-h sm-hidden-h z-5' onClick={() => { toggleDropUp() }}>
                     {dropUp ? <></> : <div className='arrow-up drop-up-element fill-light'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>

@@ -34,7 +34,7 @@ const Lawyer = () => {
                                 </li>
                                 <br/>
                                 <li className="margin-1 flex li-link fill-black">
-                                    <a href="https://consultation.avocat.fr/avocat-cholet/viviane-petit-42295.html" className='cta-link text-light'>Prendre rendez-vous</a>
+                                    <a href="https://consultation.avocat.fr/avocat-cholet/viviane-petit-42295.html"  target="_blank" rel="noopener norefferer" className='cta-link text-light'>Prendre rendez-vous</a>
                                 </li>
                             </ul>
                         </div>

@@ -49,6 +49,21 @@
     background-repeat:no-repeat;
 }
 
+.nav-link-purple:link, .nav-link-purple:visited {
+    display: block;
+    padding: 50px 0;
+    background: linear-gradient(to top, var(--purple), var(--purple));
+    color: var(--light);
+    transition: ease-in-out 0.1s;
+    text-decoration: none;
+    width: 25vw;
+    text-align: center;
+
+    background-position: 0% 50%;
+    background-size: 100% 0;
+    background-repeat:no-repeat;
+}
+
 .nav-link-invert:link, .nav-link-invert:visited {
     background: linear-gradient(to bottom, var(--light-blue), var(--blue), var(--dark-blue));
     background-position: 0% 0%;
@@ -57,6 +72,12 @@
 }
 
 .nav-link:active, .nav-link:hover {
+    // background-color: var(--blue);
+    background-size: 100% 100% ; 
+    color: var(--light);
+}
+
+.nav-link-purple:active, .nav-link-purple:hover {
     // background-color: var(--blue);
     background-size: 100% 100% ; 
     color: var(--light);
@@ -172,6 +193,44 @@
     0% {width: 4px; background-color: #fff}
     25% {width: 50%;}
     50% {width: 100%; background-color: var(--light-blue);}
+    75% {width: 50%;}
+    100% {width: 4px; background-color: #fff}
+}
+
+.grow1-purple {
+    animation: grow1-purple 5s ease-in-out infinite;
+}
+
+.grow2-purple {
+    animation: grow2-purple 5s ease-in-out infinite;
+}
+
+
+.grow3-purple {
+    animation: grow3-purple 5s ease-in-out infinite;
+}
+
+
+@keyframes grow1-purple {
+    0% {width: 100%; background-color: var(--purple);}
+    25% {width: 50%;}
+    50% {width: 4px; background-color: #fff;}
+    75% {width: 50%;}
+    100% {width: 100%; background-color: var(--purple);}
+}
+
+@keyframes grow2-purple {
+    0% {width: 50%;}
+    25% {width: 4px; background-color: #fff;}
+    50% {width: 50%}
+    75% {width: 100%; background-color: var(--purple);}
+    100% {width: 50%;}
+}
+
+@keyframes grow3-purple {
+    0% {width: 4px; background-color: #fff}
+    25% {width: 50%;}
+    50% {width: 100%; background-color: var(--purple);}
     75% {width: 50%;}
     100% {width: 4px; background-color: #fff}
 }
