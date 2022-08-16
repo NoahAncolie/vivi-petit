@@ -56,11 +56,11 @@
     position: absolute;
 }
 
-.make-click {
+.call-to-click {
     position: fix;
     transition: 0.3s ease-in-out;
     background-color: var(--blue);
-    transform: scale(50);
+    transform: scale(45);
     top: 100% !important;
     left: calc(50% - 3.5px) !important;
 }

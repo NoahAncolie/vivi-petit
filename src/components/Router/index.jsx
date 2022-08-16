@@ -8,6 +8,7 @@ import Contact from "../../pages/Contact"
 import LawFields from "../../pages/LawFields"
 import Lawyer from "../../pages/Lawyer"
 import Articles from "../../pages/Articles"
+import AdminLogin from "../../pages/AdminLogin"
 import DropDownMenu from "../Nav/DropDownMenu"
 import DropUpMenu from "../Nav/DropUpMenu"
 import "../../styles/pages.scss"
@@ -75,9 +76,9 @@ const Router = () => {
             document.getElementById('mouse').style.top = `calc(${event.clientY}px - 10px)`
             document.getElementById('mouse').style.left = `calc(${event.clientX}px - 10px)`
             if (event.clientY > window.screen.height / 2 && event.clientX > window.screen.width / 4 && event.clientX < ( window.screen.width - window.screen.width / 4)) {
-                document.getElementById('mouse').classList.add('make-click')
+                document.getElementById('mouse').classList.add('call-to-click')
             } else {
-                document.getElementById('mouse').classList.remove('make-click')
+                document.getElementById('mouse').classList.remove('call-to-click')
             }
 
         })
@@ -101,6 +102,7 @@ const Router = () => {
                     <Route path="/lawyer-fields" element={<LawFields />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/articles" element={<Articles />} />
+                    <Route path="/mon-espace" element={<AdminLogin />} />
                 </Routes>
                 <DropUpMenu goTo={goToPlace} invertArrows={invertArrows} JwtUser={JwtUser} toggleDropUp={toggleDropUp} />
                 <div className='drop-up-toggle md-hidden-h sm-hidden-h z-5' onClick={() => { toggleDropUp() }}>
