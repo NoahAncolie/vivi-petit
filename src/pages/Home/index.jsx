@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import vivianePetitAvocatCholet from "../../assets/images/viviane-petit-avocat-cholet.jpg"
 import vivianePetitAvocatCholetBuste from "../../assets/images/viviane-petit-avocat-cholet-buste.jpg"
 
