@@ -9,7 +9,7 @@ const Home = () => {
         <div className="bg bg-main lg-flex md-flex fade-out overflow-hidden" id="page">
             <div className="lg-width-half lg-height-full md-width-half md-height-full"></div>
             <div className="lg-width-half lg-height-full md-height-full md-width-half">
-                <img src={vivianePetitAvocatCholetBuste} alt="viviane-petit-avocat-cholet" className="lg-height-full md-hidden-h sm-hidden-h padding-20-10 switch-image-A" />
+                <img src={vivianePetitAvocatCholetBuste} alt="viviane-petit-avocat-cholet" className="lg-width-full md-hidden-h sm-hidden-h padding-10 switch-image-A" />
             </div>
             <div className="bg-layer sm-padding-top-30 md-padding-top-2 width-full lg-flex lg-item-center lg-padding-10">
                 <div className='lg-width-half'>
