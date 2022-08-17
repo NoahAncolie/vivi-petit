@@ -44,9 +44,22 @@
 }
 
 .button {
-    border-radius: 5px;
+    border-radius: 3px;
+    background-color: transparent;
     padding: 10px;
-    box-shadow: 3px 3px 10px var(--blue) inset, -3px -3px 10px var(--light-blue) inset;
     width: fit-content;
     transition: 0.2s ease-in-out;
+    color: var(--light);
+    border: none;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.button:focus {
+    outline: none;
 }

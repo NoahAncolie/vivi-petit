@@ -1,17 +1,38 @@
-import { useAtomValue } from "jotai"
+import { useEffect, useState } from "react"
+import { useAtom } from "jotai"
 import { JWT } from "../../stores/user"
+import AdminArticle from "./AdminArticle"
+import WritingZone from "./WritingZone"
 
 const AdminLogin = () => {
-    const JwtUser = useAtomValue(JWT)
+    const [JwtUser, setJwt] = useAtom(JWT)
+    const [articles, setArticles] = useState()
+    const [newArticle, setRefresh] = useState(1) 
+
+    const getArticles = () => {
+        fetch('http://localhost:3001/articles')
+            .then((answer) => {
+                return answer.json()
+            })
+            .then((articles) => {
+                setArticlesList(articles.reverse())
+            })
+    }
+
+    const setArticlesList = (data_obj) => {
+        setArticles(data_obj)
+    }
+
+    const setRefreshList = () => {
+        setRefresh(newArticle + 1)
+    }
 
     const connect = (event) => {
         const datas = Array.from(new FormData(document.getElementById('loginForm')))
-        console.log(datas[0][1])
-        console.log(datas[1][1])
         fetch('http://localhost:3001/users/sign_in', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'   
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 user: {
@@ -20,32 +41,40 @@ const AdminLogin = () => {
                 }
             })
         }).then((answer) => {
-            console.log(answer)
-            return answer.json() })
-        .then((datas) => {console.log(datas) })
+            setJwt(answer.headers.get("Authorization"))
+            return answer.json()
+        })
     }
 
+    useEffect(() => {
+        getArticles()
+    }, [newArticle])
+
     return (
-        <div className="bg-main vh-full">
+        <div className="bg-main height-full margin-0">
             {JwtUser ?
-                <div>
-                    
-                </div>
-                : // JONCTION : ⬆ UTILISATEUR CONNECTÉ , ⬇ UTILISATEUR NON CONNECTÉ
-                <form className="admin-form" id="loginForm" onSubmit={(event) => {event.preventDefault(); connect(event)}}>
+                <>
+                    <h1 className="text-center padding-1">👩🏻‍🏫 Administration Articles 👩🏻‍🏫</h1>
+                    <WritingZone authorization={JwtUser} refresh={setRefreshList} />
+                    {articles.map((article) => (
+                        <AdminArticle article={article} key={article.id} authorization={JwtUser} refresh={setRefreshList}/>
+                    ))}
+                </>
+                : // JONCTION : ⬆ UTILISATEUR CONNECTÉ , ⬇ UTILISATEUR DÉCONNECTÉ
+                <form className="admin-form" id="loginForm" onSubmit={(event) => { event.preventDefault(); connect(event) }}>
                     <label htmlFor="email" className="block text-sm ">Email</label>
-                    <div class="">
-                        <input type="email" name="email" id="email" className="input-field"/>
+                    <div className="">
+                        <input type="email" name="email" id="email" className="input-field" />
                     </div>
-                    <br/>
+                    <br />
                     <label htmlFor="password" className="block text-sm ">Mot de passe</label>
-                    <div class="">
-                        <input type="password" name="password" id="password" className="input-field"/>
+                    <div className="">
+                        <input type="password" name="password" id="password" className="input-field" />
                     </div>
-                    <br/>
-                    <br/>
-                    <div class="">
-                        <input type="submit" value="Se connecter" className="sumbit-btn-light"/>
+                    <br />
+                    <br />
+                    <div className="">
+                        <input type="submit" value="Se connecter" className="sumbit-btn-light" />
                     </div>
                 </form>
             }

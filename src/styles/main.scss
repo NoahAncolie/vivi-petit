@@ -59,6 +59,10 @@
     font-family: 'Adequate', 'Times New Roman', Times, serif, Helvetica, Arial;
 }
 
+html, body {
+    background-color: var(--main);
+}
+
 .bosch-font {
     font-family: Bosch;
 }

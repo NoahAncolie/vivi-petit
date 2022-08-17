@@ -46,7 +46,7 @@ $container-max-width: (
     }
 
     .sm-hidden-h {
-        height: 0;
+        height: 0 !important;
         overflow: hidden;
     }
 
@@ -111,7 +111,7 @@ $container-max-width: (
     }
 
     .md-hidden-h {
-        height: 0;
+        height: 0 !important;
         overflow: hidden;
     }
 
@@ -273,6 +273,10 @@ $container-max-width: (
     height: 100vh;
 }
 
+.vh-half {
+    height: 50vh;
+}
+
 // ------------- BACKROUNDS -------------
 
 .bg {
@@ -305,8 +309,20 @@ $container-max-width: (
     padding: 100px;
 }
 
+.padding-20 {
+    padding: 200px;
+}
+
 .padding-0-10 {
     padding: 0 100px;
+}
+
+.padding-10-0 {
+    padding: 100px 0;
+}
+
+.padding-20-10 {
+    padding: 200px 100px;
 }
 
 .padding-x-3 {
@@ -332,7 +348,15 @@ $container-max-width: (
     padding: 100px 0;
 }
 
+.padding-right-20 {
+    padding-right: 200px;
+}
+
 // ------------- MARGINS -------------
+
+.margin-0 {
+    margin: 0px;
+}
 
 .margin-1 {
     margin: 10px;
@@ -360,6 +384,10 @@ $container-max-width: (
 
 .margin-0-10 {
     margin: 0 100px;
+}
+
+.margin-20-10 {
+    margin: 200px 100px;
 }
 
 .margin-x-3 {

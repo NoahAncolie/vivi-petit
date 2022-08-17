@@ -66,7 +66,13 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-// ------------- Gradients -------------
+// ------------- BOX-SHADOWS -------------
+
+.box-shadow-simple {
+    box-shadow: 10px -10px 0 var(--blue);
+}
+
+// ------------- GRADIENTS -------------
 
 .gradient-purple {
     background: linear-gradient(to right, var(--purple), var(--dark-purple));

@@ -11,6 +11,19 @@
     border-radius: 3px;
 }
 
+.input-field-admin {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid var(--light);
+    transition: 0.5s ease-in-out;
+    width: 30%;
+    color: var(--light);
+}
+
+.input-field-admin:focus {
+    outline: none;
+}
+
 .sumbit-btn-light {
     width: 100%;
     padding: 10px;

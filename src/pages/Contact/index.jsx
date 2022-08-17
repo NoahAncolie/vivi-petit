@@ -1,6 +1,8 @@
 const Contact = () => {
     return (
-        <div>Contact</div>
+        <div className="bg-main vh-full">
+            <h1>Contact</h1>
+        </div>
     )
 }
 

@@ -3,3 +3,48 @@
         padding: 200px 30vw;
     }
 }
+
+.article-content-admin {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid var(--light-gray);
+    background-color: transparent;
+    color: var(--light);
+    width: calc(100% - 20px);
+    animation: begin 0.3s ease-in-out;
+    max-height: 20vh;
+    overflow: auto;
+}
+
+.article-content-admin-text {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid var(--light-gray);
+    background-color: transparent;
+    color: var(--light);
+    width: calc(100% - 20px);
+    animation: begin 0.3s ease-in-out;
+    overflow: auto;
+}
+
+.article-content-admin-text:focus {
+    outline: none;
+}
+
+.article-title-admin {
+    margin: 10px;
+}
+
+.btn-sauvegarder:hover {
+    background-color: var(--light-purple);
+    color: var(--light);
+}
+
+.btn-archiver:hover {
+    background-color: var(--middle-blue);
+    color: var(--light);
+}
+.btn-supprimer:hover {
+    background-color: red;
+    color: var(--light);
+}
