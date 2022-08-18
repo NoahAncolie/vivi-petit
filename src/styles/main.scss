@@ -29,7 +29,8 @@
         './home.scss',
         './inputs.scss',
         './routeur.scss',
-        './admin.scss';
+        './admin.scss',
+        './articles.scss';
 
 
 @font-face {
@@ -53,6 +54,11 @@
     src: url('../assets/fonts/Adequate-ExtraLight.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'hand-scripted';
+    src: url('../assets/fonts/MrDeHaviland-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,4 +75,10 @@ html, body {
 
 .text-light {
     color: var(--light);
+}
+
+.hand-signed {
+    color: var(--blue);
+    font-family: 'hand-scripted';
+    font-size: 1.5rem;
 }

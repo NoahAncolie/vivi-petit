@@ -38,7 +38,7 @@ const WritingZone = ({ authorization, refresh }) => {
     return (
         <div className="padding-10-0">
             <h4 className="padding-1">Zone de rédac 📓</h4>
-            <button className="button" onClick={setToggleWrite}>Rédiger Un Article</button>
+            <button className="button" onClick={setToggleWrite}>{writing ? "Arrêter de rédiger" : "Rédiger Un Article"}</button>
             {writing ?
                 <>
                     <input className="input-field-admin" onChange={(event) => { setUpdateTitle(event.target.value) }} defaultValue={articleTitle} placeholder="Titre de l'article" />

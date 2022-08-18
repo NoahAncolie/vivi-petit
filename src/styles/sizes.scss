@@ -54,6 +54,26 @@ $container-max-width: (
         width: auto;
     }
 
+    .sm-padding-1 {
+        padding: 10px;
+    }
+
+    .sm-padding-2 {
+        padding: 20px;
+    }
+
+    .sm-padding-3 {
+        padding: 30px;
+    }
+
+    .sm-padding-4 {
+        padding: 40px;
+    }
+
+    .sm-padding-5 {
+        padding: 50px;
+    }
+
     .sm-padding-20 {
         padding: 200px;
     }
@@ -113,6 +133,26 @@ $container-max-width: (
     .md-hidden-h {
         height: 0 !important;
         overflow: hidden;
+    }
+
+    .md-padding-1 {
+        padding: 10px;
+    }
+
+    .md-padding-2 {
+        padding: 20px;
+    }
+
+    .md-padding-3 {
+        padding: 30px;
+    }
+
+    .md-padding-4 {
+        padding: 40px;
+    }
+
+    .md-padding-5 {
+        padding: 50px;
     }
 
     .md-padding-10 {
@@ -204,6 +244,26 @@ $container-max-width: (
         font-size: 60px;
     }
 
+    .lg-padding-1 {
+        padding: 10px;
+    }
+
+    .lg-padding-2 {
+        padding: 20px;
+    }
+
+    .lg-padding-3 {
+        padding: 30px;
+    }
+
+    .lg-padding-4 {
+        padding: 40px;
+    }
+
+    .lg-padding-5 {
+        padding: 50px;
+    }
+
     .lg-padding-10 {
         padding: 100px;
     }
@@ -261,6 +321,11 @@ $container-max-width: (
 
 // ------------- HEIGHTS -------------
 
+.hidden-h {
+    height: 0;
+    overflow: hidden;
+}
+
 .height-full {
     @include set-height($full)
 }
@@ -311,6 +376,10 @@ $container-max-width: (
 
 .padding-20 {
     padding: 200px;
+}
+
+.padding-0-5 {
+    padding: 0 50px;
 }
 
 .padding-0-10 {
@@ -382,8 +451,16 @@ $container-max-width: (
     margin-left: 50px;
 }
 
+.margin-bottom-10 {
+    margin-bottom: 100px;
+}
+
 .margin-0-10 {
     margin: 0 100px;
+}
+
+.margin-10-0 {
+    margin: 100px 0;
 }
 
 .margin-20-10 {
@@ -442,6 +519,10 @@ $container-max-width: (
 
 .text-l {
     font-size: large;
+}
+
+.title {
+    padding: 10px;
 }
 
 // ------------- RADIUS -------------

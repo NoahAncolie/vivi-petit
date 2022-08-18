@@ -96,3 +96,31 @@ link {
   75% {transform: scale(1.2);}
   100% { transform: scale(1);}
 }
+
+.transition-1 {
+  transition: ease-in-out 0.1s;
+}
+
+.transition-2 {
+  transition: ease-in-out 0.2s;
+}
+
+.transition-3 {
+  transition: ease-in-out 0.3s;
+}
+
+.open {
+  animation: openDiv 1s ease-in-out;
+  opacity: 1;
+  overflow: hidden;
+  // border-left: 1px solid orange;
+  padding: 10px;
+  background: linear-gradient(to left, orange, orange);
+  background-position: 0% 0%;
+  background-size: 1px 100%;
+  background-repeat:no-repeat;
+}
+
+@keyframes openDiv {
+  0% { opacity: 0; background-size: 1px 0%;}
+}

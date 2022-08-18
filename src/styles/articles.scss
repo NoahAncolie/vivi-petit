@@ -1,0 +1,27 @@
+.article-title {
+    transition: ease-in-out 0.5s;
+    // background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); //---- WHITE
+    // background: linear-gradient(to left, rgba(255, 166, 0, 0.304), rgba(255, 166, 0, 0.304)); //---- ORANGE
+    background: linear-gradient(to left, rgba(0, 118, 182, 0.304), rgba(0, 118, 182, 0.304)); //---- BLUE
+    background-position: 0% 100%;
+    background-size: 0 100%;
+    background-repeat:no-repeat;
+    border-left: 1px solid var(--blue);
+    padding: 10px 9px;
+}
+
+.article-title:hover {
+  background-position: 0% 100%;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  padding-left: 10px;
+  border-left: 2px solid var(--blue);
+  background-color: rgba(0, 118, 182, 0.304); //---- BLUE
+  // background-color: rgba(255, 166, 0, 0.304); //---- ORANGE
+  // background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0 3px 3px 0;
+}
+
+.article-content-articles {
+    padding-bottom: 200px;
+}

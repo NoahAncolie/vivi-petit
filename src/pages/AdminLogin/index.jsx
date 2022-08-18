@@ -51,7 +51,7 @@ const AdminLogin = () => {
     }, [newArticle])
 
     return (
-        <div className="bg-main height-full margin-0">
+        <div className="bg-main height-full margin-0" id="page">
             {JwtUser ?
                 <>
                     <h1 className="text-center padding-1">👩🏻‍🏫 Administration Articles 👩🏻‍🏫</h1>

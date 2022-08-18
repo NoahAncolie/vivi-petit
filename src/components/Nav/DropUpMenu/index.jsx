@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom"
+import { useEffect } from "react";
 
 const DropUpMenu = ({toggleDropUp, invertArrows}) => {
+
+    useEffect(() => {
+        // alert(window.location.pathname)
+    }, [window.location.pathname])
 
     return (
         <div className="drop-up-menu z-4 width-full md-hidden-h sm-hidden-h collapse-down-menu bg-main" id="dropUpMenu">
             <div className="width-full lg-title-xl">
                 <div className="width-full text-center nav-spacing">
-                    <Link to="/" className="nav-link-small text-light" id='lawyer' onClick={(event) => {toggleDropUp(); invertArrows()}}>Viviane PETIT</Link>
+                    <Link to={`${window.location.pathname === '/lawyer' ? '/' : '/lawyer'}`} className="nav-link-small text-light" id='lawyer' onClick={(event) => {toggleDropUp(); invertArrows()}}>{`${window.location.pathname === '/lawyer' ? 'Accueil' : 'Viviane PETIT'}`}</Link>
                 </div>
                 <div className="width-full text-center nav-spacing">
                     <Link to="lawyer-fields" className="nav-link-small text-light" id='lawyer-fields' onClick={(event) => {toggleDropUp(); invertArrows()}}>Expertises</Link>
