@@ -42,7 +42,7 @@ const WritingZone = ({ authorization, refresh }) => {
             {writing ?
                 <>
                     <input className="input-field-admin" onChange={(event) => { setUpdateTitle(event.target.value) }} defaultValue={articleTitle} placeholder="Titre de l'article" />
-                    <textarea className="article-content-admin vh-half" onChange={(event) => { setUpdateContent(event.target.value) }} defaultValue={articleContent} placeholder="écrire le contenu ici" />
+                    <textarea className="article-content-admin-text vh-half" onChange={(event) => { setUpdateContent(event.target.value) }} defaultValue={articleContent} placeholder="écrire le contenu ici" />
                     <button className='button btn-sauvegarder' onClick={() => { setToggleWrite(); saveArticle(); setUpdateContent(""); setUpdateTitle("") }}>Sauvegarder</button>
                 </>
                 :

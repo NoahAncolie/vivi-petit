@@ -37,7 +37,7 @@ const Router = () => {
         let ambiantMusic = document.getElementById('audioTag')
         if (ambiantMusic) {
             ambiantMusic.volume = 0.3
-            ambiantMusic.play()
+            ambiantMusic.pause() // ------------ REMETTRE PLAY ------------
         }
     }
 

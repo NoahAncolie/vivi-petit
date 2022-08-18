@@ -42,8 +42,7 @@ const AdminArticle = ({ article, authorization, refresh }) => {
                     archived: !article.archived
                 }
             })
-        }).then((answer) => {return answer.json()})
-        .then((data) => {console.log(data)})
+        })
         setTimeout(refresh, 100);
     }
 
