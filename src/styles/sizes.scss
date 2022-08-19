@@ -299,6 +299,10 @@ $container-max-width: (
     .lg-text-l {
         font-size: large;
     }
+
+    .bg-layer {
+        z-index: -1;
+    }
 }
 
 // ------------- WIDTHS -------------
@@ -392,6 +396,10 @@ $container-max-width: (
 
 .padding-20-10 {
     padding: 200px 100px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 100px;
 }
 
 .padding-x-3 {

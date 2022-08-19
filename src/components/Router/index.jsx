@@ -11,6 +11,7 @@ import Articles from "../../pages/Articles"
 import AdminLogin from "../../pages/AdminLogin"
 import DropDownMenu from "../Nav/DropDownMenu"
 import DropUpMenu from "../Nav/DropUpMenu"
+import Appointment from "../../pages/Appointment"
 import "../../styles/pages.scss"
 
 const Router = () => {
@@ -95,6 +96,7 @@ const Router = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/articles" element={<Articles />} />
                     <Route path="/mon-espace" element={<AdminLogin />} />
+                    <Route path="/rendez-vous" element={<Appointment />} />
                 </Routes>
                 <DropUpMenu invertArrows={invertArrows} JwtUser={JwtUser} toggleDropUp={toggleDropUp} />
                 <div className='drop-up-toggle md-hidden-h sm-hidden-h z-5' onClick={() => { toggleDropUp() }}>

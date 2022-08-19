@@ -12,29 +12,29 @@
     --light2-transparent: #f2efe4c1;
     --purple: #5E3880;
     --light-purple: #8855B4;
-    --light-transparent-purple: #8855b4c1;
+    --light-purple-transparent: rgba(136, 85, 180, 0.308);
     --dark-purple: #341F47;
 }
 
 @import './colors.scss',
-        './borders.scss',
-        './navbar.scss',
-        './pages.scss',
-        './sizes.scss',
-        './display.scss',
-        './decorations.scss',
-        './molecules.scss',
-        './effects.scss',
-        './vivi-bg.scss',
-        './home.scss',
-        './inputs.scss',
-        './routeur.scss',
-        './admin.scss',
-        './articles.scss';
+'./borders.scss',
+'./navbar.scss',
+'./pages.scss',
+'./sizes.scss',
+'./display.scss',
+'./decorations.scss',
+'./molecules.scss',
+'./effects.scss',
+'./vivi-bg.scss',
+'./home.scss',
+'./inputs.scss',
+'./routeur.scss',
+'./admin.scss',
+'./articles.scss';
 
 
 @font-face {
-    font-family: 'Durer' ;
+    font-family: 'Durer';
     src: url('../assets/fonts/Durer.ttf') format('truetype'),
         url('../assets/fonts/Durer.woff') format('woff');
 }
@@ -50,7 +50,7 @@
 }
 
 @font-face {
-    font-family: 'Adequate' ;
+    font-family: 'Adequate';
     src: url('../assets/fonts/Adequate-ExtraLight.ttf') format('truetype');
 }
 
@@ -65,7 +65,8 @@
     font-family: 'Adequate', 'Times New Roman', Times, serif, Helvetica, Arial;
 }
 
-html, body {
+html,
+body {
     background-color: var(--main);
 }
 
@@ -81,4 +82,44 @@ html, body {
     color: var(--blue);
     font-family: 'hand-scripted';
     font-size: 1.5rem;
+}
+
+a.btnIframMl {
+    bottom: 34px;
+    right: 78px;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--blue);
+    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.7);
+    margin: auto;
+    margin-right: 0;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+a.btnIframMl span {
+    font-size: 12px;
+    position: relative;
+    top: initial;
+    line-height: 1;
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+a.btnIframMl span::before {
+    background: url(https://rdv.meetlaw.fr/ml.png) no-repeat;
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 31px;
+    position: relative;
+    top: initial;
+    background-size: contain;
+}
+
+a.btnIframMl:hover {
+    color: var(--blue);
+    opacity: .7;
 }

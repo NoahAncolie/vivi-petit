@@ -64,6 +64,7 @@
     transform: scale(40);
     top: 100% !important;
     left: calc(50% - 3.5px) !important;
+    box-shadow: 0 0 5px var(--blue);
 }
 
 .show-sound-toggler {
