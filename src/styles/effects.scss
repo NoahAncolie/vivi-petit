@@ -32,6 +32,7 @@ link {
     animation: fadeOut 1s ease-in-out;
   }
 
+
   @keyframes fadeOut {
     0% {opacity: 0%;}
   }
@@ -61,6 +62,15 @@ link {
  @keyframes slideInYDown {
     0% {transform: translateY(200%);}
  }
+
+ .slide-in-y-up {
+  animation: 0.5s slideInYUp ease-in-out;
+ }
+
+ @keyframes slideInYUp {
+    0% {transform: translateY(-200%);}
+ }
+
 
 .float {
   animation: floating 3s ease-in-out infinite;
@@ -123,4 +133,20 @@ link {
 
 @keyframes openDiv {
   0% { opacity: 0; background-size: 1px 0%;}
+}
+
+.grow-h {
+  animation: growH 0.5s ease-in-out;
+}
+
+.grow-h-2 {
+  animation: growH2 0.5s ease-in-out;
+}
+
+@keyframes growH {
+  0% {opacity: 0;}
+}
+
+@keyframes growH2 {
+  0% {opacity: 0;}
 }

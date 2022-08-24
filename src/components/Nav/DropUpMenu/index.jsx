@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react";
 
-const DropUpMenu = ({toggleDropUp, invertArrows}) => {
+const DropUpMenu = ({toggleDropUp, invertArrows, stopMusic, playMusic}) => {
 
     useEffect(() => {
         // alert(window.location.pathname)
@@ -11,16 +11,16 @@ const DropUpMenu = ({toggleDropUp, invertArrows}) => {
         <div className="drop-up-menu z-4 width-full md-hidden-h sm-hidden-h collapse-down-menu bg-main" id="dropUpMenu">
             <div className="width-full lg-title-xl">
                 <div className="width-full text-center nav-spacing">
-                    <Link to={`/`} className="nav-link-small text-light" id='lawyer' onClick={(event) => {toggleDropUp(); invertArrows()}}>{`Accueil`}</Link>
+                    <Link to={`/`} className="nav-link-small text-light" id='lawyer' onClick={(event) => {toggleDropUp(); invertArrows(); playMusic()}}>{`Accueil`}</Link>
                 </div>
                 <div className="width-full text-center nav-spacing">
-                    <Link to="lawyer-fields" className="nav-link-small text-light" id='lawyer-fields' onClick={(event) => {toggleDropUp(); invertArrows()}}>Expertises</Link>
+                    <Link to="lawyer-fields" className="nav-link-small text-light" id='lawyer-fields' onClick={(event) => {toggleDropUp(); invertArrows(); stopMusic()}}>Expertises</Link>
                 </div>
                 <div className="width-full text-center nav-spacing">
-                    <Link to="contact" className="nav-link-small text-light" id='contact' onClick={(event) => {toggleDropUp(); invertArrows()}}>Informations</Link>
+                    <Link to="contact" className="nav-link-small text-light" id='contact' onClick={(event) => {toggleDropUp(); invertArrows(); stopMusic()}}>Informations</Link>
                 </div>
                 <div className="width-full text-center nav-spacing">
-                    <Link to="articles" className="nav-link-small text-light" id='articles' onClick={(event) => {toggleDropUp(); invertArrows()}}>Articles</Link>
+                    <Link to="articles" className="nav-link-small text-light" id='articles' onClick={(event) => {toggleDropUp(); invertArrows(); stopMusic()}}>Articles</Link>
                 </div>
             </div>
         </div>   

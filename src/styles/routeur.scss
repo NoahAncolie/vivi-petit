@@ -61,9 +61,10 @@
     position: fixed;
     transition: 0.3s ease-in-out;
     background-color: var(--blue);
-    transform: scale(40);
-    top: 100% !important;
-    left: calc(50% - 3.5px) !important;
+    width: 200px;
+    height: 200px;
+    top: calc(100% - 100px) !important;
+    left: calc(50% - 100px) !important;
     box-shadow: 0 0 5px var(--blue);
 }
 

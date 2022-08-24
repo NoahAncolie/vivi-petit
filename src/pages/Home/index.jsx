@@ -56,7 +56,7 @@ const Home = () => {
                 <div className="overlay lg-width-full md-hidden-h sm-hidden-h">
                     <div className="text width-full">
                         <h3 className="border-left-2 border-blue title">Courte présentation</h3><br />
-                        <p className="text-l text-justify">
+                        <p className="text-m text-justify">
                             "Avocat à Cholet depuis 1998, je suis intervenue dans de nombreux domaines du droit au bénéfice de mes clients professionnels ou particuliers et j’ai pu développer ainsi mon expertise dans différentes matières.<br /><br />
                             Le droit régit nos vies. Et l’inflation législative augmente à l’envie les règles de droit à connaître et à appliquer.<br /><br />
                             Si l’internet permet à tout un chacun d’avoir accès à ces règles qu’il s’agisse des textes ou des décisions de justice mises en open source, la réflexion juridique nécessite une formation qui ne peut s’acquérir sans étude et sans expérience.<br /><br />

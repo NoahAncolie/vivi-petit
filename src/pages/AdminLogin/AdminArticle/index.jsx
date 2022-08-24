@@ -15,7 +15,7 @@ const AdminArticle = ({ article, authorization, refresh }) => {
     }
 
     const saveArticle = () => {
-        fetch(`http://localhost:3001/articles/${article.id}`, {
+        fetch(`http://37.187.179.249:3000/articles/${article.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ const AdminArticle = ({ article, authorization, refresh }) => {
     }
 
     const archiveArticle = () => {
-        fetch(`http://localhost:3001/articles/${article.id}`, {
+        fetch(`http://37.187.179.249:3000/articles/${article.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const AdminArticle = ({ article, authorization, refresh }) => {
     }
 
     const deleteArticle = () => {
-        fetch(`http://localhost:3001/articles/${article.id}`, {
+        fetch(`http://37.187.179.249:3000/articles/${article.id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

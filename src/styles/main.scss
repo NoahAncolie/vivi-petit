@@ -30,7 +30,8 @@
 './inputs.scss',
 './routeur.scss',
 './admin.scss',
-'./articles.scss';
+'./articles.scss',
+'./law_fields.scss';
 
 
 @font-face {
@@ -63,6 +64,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Adequate', 'Times New Roman', Times, serif, Helvetica, Arial;
+    scrollbar-color: red, blue;
 }
 
 html,
