@@ -66,6 +66,7 @@
   }
 
   .expert-button-img {
+    transition: 0.2s ease-in-out;
     max-width: 10vw;
   }
 
@@ -80,6 +81,6 @@
     outline: none;
   }
 
-  .expert-button:hover {
+  .expert-button:hover img{
     transform: scale(0.9);
   }
