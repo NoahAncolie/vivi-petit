@@ -1,6 +1,6 @@
 const Commercial = () => {
     return (
-        <div>
+        <div className="fade-out">
             <h3 className="border-left-2 border-blue title">Droit commercial</h3>
             <p className="overflow-y-auto">
                 Le droit commercial est une branche du droit des affaires encadrant la profession de commerçant, fixant les règles des actes de commerce et régie notamment par le Code de commerce.

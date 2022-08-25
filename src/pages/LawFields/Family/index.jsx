@@ -1,6 +1,6 @@
 const Family = () => {
     return (
-        <div>
+        <div className="fade-out">
             <h3 className="border-left-2 border-blue title">Droit de la famille</h3>
             <p className="overflow-y-auto">
             Le droit de la famille est une branche large du droit civil incluant l’ensemble des règles juridiques régissant les rapports familiaux : séparations du couple (mariés, pacsés ou simplement concubins), le droit des grands-parents, l’adoption, la filiation et les majeurs protégés.

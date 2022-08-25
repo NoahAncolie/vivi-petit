@@ -1,6 +1,6 @@
 const Civil = () => {
     return (
-        <div>
+        <div className="fade-out">
             <h3 className="border-left-2 border-blue title">Droit des procédures civiles d'exécution</h3>
             <p className="overflow-y-auto">
                 Le droit des procédures civiles d’exécution englobe l’ensemble des procédures permettant de mettre à exécution une décision de justice, ou de préserver les droits d’une partie avant qu’une procédure judiciaire ne soit engagée.

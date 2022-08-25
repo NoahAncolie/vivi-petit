@@ -1,6 +1,6 @@
 const Construction = () => {
     return (
-        <div>
+        <div className="fade-out">
             <h3 className="border-left-2 border-blue title">Droit de la Construction</h3>
             <p className="overflow-y-auto">
                 Le droit de la construction est une branche du droit qui concerne notamment :

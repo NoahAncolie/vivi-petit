@@ -55,7 +55,6 @@ const Home = () => {
                 <img src={vivianePetitAvocatCholetBuste} alt="viviane-petit-avocat-cholet" className="lg-width-full md-hidden-h sm-hidden-h lg-padding-10 switch-image-A" />
                 <div className="overlay lg-width-full md-hidden-h sm-hidden-h">
                     <div className="text width-full">
-                        <h3 className="border-left-2 border-blue title">Courte présentation</h3><br />
                         <p className="text-m text-justify">
                             "Avocat à Cholet depuis 1998, je suis intervenue dans de nombreux domaines du droit au bénéfice de mes clients professionnels ou particuliers et j’ai pu développer ainsi mon expertise dans différentes matières.<br /><br />
                             Le droit régit nos vies. Et l’inflation législative augmente à l’envie les règles de droit à connaître et à appliquer.<br /><br />

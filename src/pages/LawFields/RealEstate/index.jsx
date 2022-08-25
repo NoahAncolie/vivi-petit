@@ -1,6 +1,6 @@
 const RealEstate = () => {
     return (
-        <div className="">
+        <div className="fade-out">
             <h3 className="border-left-2 border-blue title">Droit immobilier</h3>
             <p className="overflow-y-auto">Le droit immobilier peut se définir comme l’ensemble des droits découlant des immeubles bâtis ou non bâtis.
                 <br />

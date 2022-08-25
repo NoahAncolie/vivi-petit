@@ -58,26 +58,26 @@ const AdminArticle = ({ article, authorization, refresh }) => {
     }
 
     return (
-        <div className="margin-y-5">
-            <h5 className="article-title-admin">{article.name}</h5>
+        <div className="padding-y-5 bg-light">
+            <h5 className="article-title-admin title border-left border-dark">{article.name}</h5>
             <div id={`article-content${article.id}`}>
                 {writing ?
-                    <textarea className="article-content-admin-text vh-half" onChange={(event) => { setUpdateContent(event.target.value) }} defaultValue={articleContent} />
+                    <textarea className="article-content-admin-text vh-half text-black border-1 border-dark" onChange={(event) => { setUpdateContent(event.target.value) }} defaultValue={articleContent} />
                     :
-                    <p className="article-content-admin" onClick={() => { setToggleWrite() }}>{articleContent}</p>
+                    <p className="article-content-admin text-black border-1 border-dark" onClick={() => { setToggleWrite() }}>{articleContent}</p>
                 }
             </div>
             <div className="articles-actions flex space-between" id={`buttons-of-article${article.id}`}>
                 <div>
-                    <button className="button btn-archiver" onClick={archiveArticle}>{!article.archived ? "Archiver" : "Remettre sur le site" }</button>
+                    <button className="button-dark btn-archiver" onClick={archiveArticle}>{!article.archived ? "Archiver" : "Remettre sur le site" }</button>
                     {writing ?
-                        <button className='button btn-sauvegarder' onClick={() => { setToggleWrite(); saveArticle() }}>Sauvegarder</button>
+                        <button className='button-dark btn-sauvegarder' onClick={() => { setToggleWrite(); saveArticle() }}>Sauvegarder</button>
                         :
                         <></>
                     }
                 </div>
                 <div>
-                    <button className="button btn-supprimer" onClick={deleteArticle}>Supprimer</button>
+                    <button className="button-dark btn-supprimer" onClick={deleteArticle}>Supprimer</button>
                 </div>
             </div>
         </div>

@@ -1,20 +1,17 @@
-.expert-pictures {
-    max-width: 10vw;
-}
+
 
 .expert-center-picture {
-    width: calc(100% - 40px);
-    padding: 0 20px;
+    width: calc(100%);
+    padding: 100px 0;
     transition: 0.5s ease-in-out;
 }
 
 .expert-text {
-    color: white;
     font-size:medium;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
+    width: 80vw;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -25,9 +22,64 @@
   }
 
   .expert-container {
-    min-height: 75vh;
+    min-height: 65vh;
+    width: 50%;
+    position: relative;
   }
 
   .lawfields-ul {
     list-style-position: inside;
+  }
+
+.expert-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: transparent;
+  }
+
+  .col-left {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(10vw + 30px);
+    top: 0;
+    left: 0;
+  }
+
+  .col-right {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(10vw + 30px);
+    top: 0;
+    right: 0;
+  }
+
+  .expert-button-img {
+    max-width: 10vw;
+  }
+
+  .expert-button {
+    padding : 15px;
+    background-color: transparent;
+    border: none;
+    transition: 0.5 ease-in-out;
+  }
+
+  .expert-button:focus {
+    outline: none;
+  }
+
+  .expert-button:hover {
+    transform: scale(0.9);
   }

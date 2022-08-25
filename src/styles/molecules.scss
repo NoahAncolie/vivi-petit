@@ -63,3 +63,24 @@
 .button:focus {
     outline: none;
 }
+
+.button-dark {
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+    color: black;
+    border: 1px solid black;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-dark:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.button-dark:focus {
+    outline: none;
+}

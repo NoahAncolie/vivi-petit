@@ -10,7 +10,7 @@ const AdminLogin = () => {
     const [newArticle, setRefresh] = useState(1) 
 
     const getArticles = () => {
-        fetch('http://localhost:3001/articles')
+        fetch('http://37.187.179.249:3000/articles')
             .then((answer) => {
                 return answer.json()
             })
@@ -29,7 +29,7 @@ const AdminLogin = () => {
 
     const connect = (event) => {
         const datas = Array.from(new FormData(document.getElementById('loginForm')))
-        fetch('http://localhost:3001/users/sign_in', {
+        fetch('http://37.187.179.249:3000/users/sign_in', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ const AdminLogin = () => {
     }, [newArticle])
 
     return (
-        <div className="bg-main height-full margin-0" id="page">
+        <div className="bg-light vh-full margin-0" id="page">
             {JwtUser ?
                 <>
                     <h1 className="text-center padding-1">👩🏻‍🏫 Administration Articles 👩🏻‍🏫</h1>

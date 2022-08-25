@@ -2,7 +2,9 @@
     width: 100%;
     padding: 10px;
     border: 2px solid var(--main);
+    border-radius: 3px;
     transition: 0.5s ease-in-out;
+    background-color: var(--light);
 }
 
 .input-field:focus {
@@ -27,14 +29,15 @@
 .sumbit-btn-light {
     width: 100%;
     padding: 10px;
-    color: var(--light);
-    border: 2px solid var(--main);
-    background-color: var(--main);
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    background-color: transparent;
     transition: 0.5s ease-in-out;
+    border-radius: 3px;
 }
 
 .sumbit-btn-light:hover {
     outline: none;
     background-color: var(--purple);
-    border-radius: 3px;
+    color: var(--light);
 }
