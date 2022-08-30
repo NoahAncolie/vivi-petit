@@ -14,10 +14,14 @@ const Contact = () => {
                     <li>Prendre rendez-vous</li>
                     <li>Laisser des messages</li>
                 </ul>
-                Vous pouvez également me joindre sur mon téléphone portable au 06.95.40.82.72 ou par email sur petit.viviane@avocat-conseil.fr
+                Vous pouvez également me joindre sur mon téléphone portable au 06.95.40.82.72 ou par email sur <a href="mailto:petit.viviane@avocat-conseil.fr" className="link">petit.viviane@avocat-conseil.fr</a>
                 <br /><br /><br />
                 <h2 className="border-left-2 border-blue title">Venir au cabinet :</h2>
-                Le cabinet est situé 2 Place Michel Ange à 49300 CHOLET, Batiment C (petit icone géolocalisation google).<br />
+                Le cabinet est situé 2 Place Michel Ange à 49300 CHOLET, Batiment C.
+                <a  href="https://www.google.fr/maps/place/2+Pl.+Michel+Ange,+49300+Cholet/@47.0556772,-0.8756564,3a,75y,265.6h,91.64t/data=!3m6!1e1!3m4!1shyupXccsD3m7w0byTGnjTw!2e0!7i16384!8i8192!4m5!3m4!1s0x480646a0a9c62e25:0x33dbe91fe72753a9!8m2!3d47.0559951!4d-0.8757689">
+                    <svg style={{width: 30, paddingLeft: 10, fill: 'white'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z" /></svg>
+                </a>
+                <br />
                 Un parking gratuit est à votre disposition.
             </p>
             <br /><br></br>
@@ -37,17 +41,17 @@ const Contact = () => {
             <br /><br />
             <section>
                 <br />
-                <h3 className="honoraire-title" onClick={() => {toggleText(1)}}>L’honoraire forfaitaire </h3>
+                <h3 className="honoraire-title" onClick={() => { toggleText(1) }}>L’honoraire forfaitaire </h3>
                 <p className="text-justify hidden-h margin-left-2" id="text-1">Après une première analyse de votre dossier et en fonction des objectifs à atteindre et du résultat escompté, l’avocat pourra définir une rémunération globale pour l’ensemble des étapes du dossier.
                     Lorsqu’il est possible de mettre en place ce mode de rémunération, cela permet au client de prévoir à l’avance et de manière définitive le montant des honoraires dus à l’avocat.
                     La convention peut prévoir des compléments d’honoraires en fonction de l’évolution du dossier, si celui - ci se complexifie et nécessite d’accomplir des diligences supplémentaires non prévues initialement. </p >
-                <h3 className="honoraire-title" onClick={() => {toggleText(2)}}>L’honoraire au temps passé  </h3>
+                <h3 className="honoraire-title" onClick={() => { toggleText(2) }}>L’honoraire au temps passé  </h3>
                 <p className="text-justify hidden-h margin-left-2" id="text-2">Ce type d’honoraires peut être proposé par l’avocat lorsqu’il est impossible d’évaluer exactement le nombre d’<b>heures de travail</b> nécessaires pour le traitement de votre dossier.
                     Le montant des honoraires est fixé suivant le taux horaire de l’avocat, en fonction du nombre d’heures de travail effectuées.</p>
-                <h3 className="honoraire-title" onClick={() => {toggleText(3)}}>L’honoraire complémentaire de résultat </h3>
+                <h3 className="honoraire-title" onClick={() => { toggleText(3) }}>L’honoraire complémentaire de résultat </h3>
                 <p className="text-justify hidden-h margin-left-2" id="text-3">La convention d’honoraires peut prévoir, en plus de l’honoraire de base (forfaitaire ou au temps passé), un honoraire complémentaire de résultat, rémunérant l’avocat suivant un <b>pourcentage du résultat obtenu ou du service rendu</b>.
                     En France, il est interdit de prévoir des honoraires en fonction du seul résultat à intervenir : c’est ce que l’on appelle la prohibition du pacte de quota litis.</p>
-                <h3 className="honoraire-title" onClick={() => {toggleText(4)}}>Le contrat d’abonnement  </h3>
+                <h3 className="honoraire-title" onClick={() => { toggleText(4) }}>Le contrat d’abonnement  </h3>
                 <p className="text-justify hidden-h margin-left-2" id="text-4">L’avocat peut prévoir avec son client des <b>honoraires forfaitaires</b> pour une période déterminée et reconductible (<b>mensuel</b>, <b>trimestriel</b>, <b>annuel</b>…).
                     Ce mode de rémunération, plus couramment appliqué en matière de conseil pour des clients institutionnels, permet une facturation à un tarif privilégié suivant le nombre d’heures de conseil allouées, les prestations comprises dans l’abonnement et sa fréquence.</p>
             </section>
@@ -56,7 +60,7 @@ const Contact = () => {
             <section>
                 <br /><h3 className="border-blue border-left-2 title">Les aides au règlement des honoraires</h3>
                 L’aide <b>juridictionnelle</b> et les contrats d’assurance de <b>protection juridique</b>  constituent deux mécanismes distincts d’aides au règlement des honoraires de l’avocat.
-                <br /><br /><h3 className="honoraire-title" onClick={() => {toggleText(5)}}>L’assurance de protection juridique</h3>
+                <br /><br /><h3 className="honoraire-title" onClick={() => { toggleText(5) }}>L’assurance de protection juridique</h3>
                 <p className="text-justify hidden-h margin-left-2" id="text-5">L’assurance de protection juridique est définie par l’article L. 127-1 du code des assurances comme « toute opération consistant (…) à prendre en charge des frais de procédure ou à fournir des services (…), en cas de différend ou de litige opposant l’assuré à un tiers, en vue notamment de défendre ou de représenter en demande l’assuré dans une procédure civile, pénale, administrative ou autre ou contre une réclamation dont il est l’objet ou d’obtenir réparation à l’amiable du dommage subi ».
                     L’assurance de protection juridique peut être contenue dans un contrat spécifique ou en annexe à un autre <b>contrat d’assurance</b> (multirisque habitation, automobile, bancaire…).
                     Si le client dispose d’une telle <b>garantie</b>, il convient de vérifier le contenu du contrat afin de savoir quels sont les <b>risques couverts</b>.
@@ -66,7 +70,7 @@ const Contact = () => {
                     Si l’assureur donne son accord sur le principe de la saisine de l’avocat, l’assuré conserve le libre choix de son avocat.
                     Les honoraires de l’avocat restent déterminés entre ce dernier et son client. Ainsi, les honoraires de l’avocat peuvent dépasser le montant pris en charge par l’assurance de protection juridique suivant son barème d’indemnisation. Ce reliquat d’honoraires restera donc à la charge du client.
                     Enfin, l’assureur bénéficie du principe de <b>subrogation</b> : « toute somme obtenue en remboursement des frais et honoraires exposés pour le règlement du litige bénéficie par priorité à l’assuré pour les dépenses restées à sa charge et, subsidiairement, à l’assureur dans la limite des sommes qu’il a engagées » (article 127-8 code des assurances).</p>
-                <h3 className="honoraire-title" onClick={() => {toggleText(6)}}>L’aide juridictionnelle</h3>
+                <h3 className="honoraire-title" onClick={() => { toggleText(6) }}>L’aide juridictionnelle</h3>
                 <p className="text-justify hidden-h margin-left-2" id="text-6">Ce système d’aide permet aux personnes physiques, dont les ressources sont insuffisantes pour faire valoir leurs droits en Justice, de bénéficier d’une <b>aide juridictionnelle totale</b> ou <b>partielle</b>.
                     L’aide juridictionnelle est régie par la loi n° 91-647 du 10 juillet 1991 relative à l’aide juridique dont les dispositions visent à assurer l’accès de tous à la <b>justice</b> et au <b>droit</b>.
                     L’aide juridictionnelle s’applique à toutes les juridictions françaises, en matière gracieuse ou contentieuse, en demande ou en défense, dans toutes les matières.

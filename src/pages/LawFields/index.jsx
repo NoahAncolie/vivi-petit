@@ -5,6 +5,7 @@ import Construction from "./Construction"
 import Commercial from "./Commercial"
 import Civil from "./Civil"
 import Family from "./Family"
+import Safe from "./Safe"
 // ----- Import Pictures -----
 import lawyerPicture from "../../assets/images/bonhomme.png"
 import BuildingPicture from "../../assets/images/construction.jpg"
@@ -12,6 +13,7 @@ import RealEstatePicture from "../../assets/images/immobilier.jpg"
 import FamilyPicture from "../../assets/images/famille.jpg"
 import HammerPicture from "../../assets/images/marteau.jpg"
 import SignedPicture from "../../assets/images/signature.jpg"
+import PeopleFighting from "../../assets/images/people-fighting.jpg"
 
 const LawFields = () => {
 
@@ -45,14 +47,15 @@ const LawFields = () => {
                     </div>
                 </div>
             </div >
-            <div className="col-left">
-                <button className="expert-button text-black" onClick={() => { setCenterPicture(RealEstatePicture); setCenterText(RealEstate) }}><img src={RealEstatePicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit Immobilier</button>
-                <button className="expert-button text-black" onClick={() => { setCenterPicture(BuildingPicture); setCenterText(Construction) }}><img src={BuildingPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit de la construction</button>
-                <button className="expert-button text-black" onClick={() => { setCenterPicture(SignedPicture); setCenterText(Commercial) }}><img src={SignedPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit commercial</button>
+            <div className="col-left bg-main">
+                <button className="expert-button text-light" onClick={() => { setCenterPicture(RealEstatePicture); setCenterText(RealEstate) }}><img src={RealEstatePicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit Immobilier</button>
+                <button className="expert-button text-light" onClick={() => { setCenterPicture(BuildingPicture); setCenterText(Construction) }}><img src={BuildingPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit de la construction</button>
+                <button className="expert-button text-light" onClick={() => { setCenterPicture(SignedPicture); setCenterText(Commercial) }}><img src={SignedPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit commercial</button>
             </div>
-            <div className="col-right">
-                <button className="expert-button text-black" onClick={() => { setCenterPicture(HammerPicture); setCenterText(Civil) }}><img src={HammerPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit des procédures civiles d’exécution</button>
-                <button className="expert-button text-black" onClick={() => { setCenterPicture(FamilyPicture); setCenterText(Family) }}><img src={FamilyPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit de la famille</button>
+            <div className="col-right bg-main">
+                <button className="expert-button text-light" onClick={() => { setCenterPicture(HammerPicture); setCenterText(Civil) }}><img src={HammerPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit des procédures civiles d’exécution</button>
+                <button className="expert-button text-light" onClick={() => { setCenterPicture(FamilyPicture); setCenterText(Family) }}><img src={FamilyPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit de la famille</button>
+                <button className="expert-button text-light" onClick={() => { setCenterPicture(FamilyPicture); setCenterText(Safe) }}><img src={PeopleFighting} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit des sûretés</button>
             </div>
         </>
 

@@ -333,3 +333,13 @@
     flex-wrap: wrap;
     justify-content: space-between;  
 }
+
+.link:link, .link:visited {
+    text-decoration: none;
+    color: var(--light);
+    transition: ease-in-out 0.2s;
+}
+
+.link:hover, .link:active {
+    color: var(--blue);
+}
