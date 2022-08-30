@@ -94,6 +94,10 @@ $container-max-width: (
         padding-top: 300px;
     }
 
+    .sm-padding-0-10 {
+        padding: 0 100px;
+    }
+
     .sm-text-xxl {
         font-size: xx-large;
     }
@@ -181,6 +185,10 @@ $container-max-width: (
 
     .md-padding-top-30 {
         padding-top: 300px;
+    }
+
+    .md-padding-0-10 {
+        padding: 0 100px;
     }
 
     .md-title-xxl {
@@ -286,6 +294,10 @@ $container-max-width: (
 
     .lg-padding-top-30 {
         padding-top: 300px;
+    }
+
+    .lg-padding-0-10 {
+        padding: 0 100px;
     }
 
     .lg-text-xxl {

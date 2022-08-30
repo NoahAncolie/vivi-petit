@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import { useAtomValue } from "jotai"
 import { JWT } from "../../stores/user"
 import ambiantSound from "../../assets/sounds/music.mp3"
@@ -12,6 +12,7 @@ import AdminLogin from "../../pages/AdminLogin"
 import DropDownMenu from "../Nav/DropDownMenu"
 import DropUpMenu from "../Nav/DropUpMenu"
 import Appointment from "../../pages/Appointment"
+import CGU from "../../pages/CGU"
 import "../../styles/pages.scss"
 
 const Router = () => {
@@ -99,6 +100,7 @@ const Router = () => {
                     <Route path="/articles" element={<Articles />} />
                     <Route path="/mon-espace" element={<AdminLogin />} />
                     <Route path="/rendez-vous" element={<Appointment />} />
+                    <Route path="/CGU" element={<CGU />} />
                 </Routes>
                 <DropUpMenu invertArrows={invertArrows} JwtUser={JwtUser} toggleDropUp={toggleDropUp} playMusic={playMusic} stopMusic={stopMusic} />
                 <div className='drop-up-toggle md-hidden-h sm-hidden-h z-5' onClick={() => { toggleDropUp() }}>
@@ -119,6 +121,7 @@ const Router = () => {
                         controls src={ambiantSound} className="audio-tag" id="audioTag">
                     </audio>
                 </div>
+                <Link to="CGU" className="CGU">Mentions légales</Link>
             </BrowserRouter>
             <div className="mouse sm-hidden-h md-hidden-h" id="mouse"></div>
         </div>

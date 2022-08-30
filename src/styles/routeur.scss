@@ -78,3 +78,34 @@
     60% { border-radius: 50%; outline: 1px solid white; outline-offset: 200px;}
     100% { border-radius: 50%; outline: 1px solid white; outline-offset: 0px; }
 }
+
+.CGU {
+    padding: 10px;
+    color: var(--light);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.CGU:hover {
+    color: var(--blue);
+}
+
+blue {
+    color: var(--dark-purple);
+    text-decoration: underline;
+}
+
+.inset {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.cgu-a {
+    text-decoration: none;
+    color: black;
+}
+
+.cgu-a:hover {
+    color: var(--blue);
+}
