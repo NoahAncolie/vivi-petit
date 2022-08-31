@@ -17,7 +17,7 @@ const CGU = () => {
                 <li><blue>Adresse électronique :</blue> <a className="cgu-a" href="mailto:petit.viviane@avocat-conseil.fr">petit.viviane@avocat-conseil.fr</a></li>
                 <li><blue>Téléphone : </blue> 02 59 10 04 40</li>
                 <li><blue>Adresse siège social :</blue> 2  Place Michel Ange, Bat C. 49300 CHOLET</li>
-                <li><blue>N° SIRET de l’établissement :</blue> </li>
+                <li><blue>N° SIRET de l’établissement :</blue> 40821965700025</li>
                 <li><blue>Directeur de rédaction et de publication :</blue> Viviane Petit</li>
             </ul>
             <br/>Droit d’auteur – Copyright © – droit des marques
