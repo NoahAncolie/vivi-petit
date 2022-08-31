@@ -11,14 +11,14 @@ const RealEstate = () => {
             <div className="overflow-y-auto">Le droit immobilier peut se définir comme l’ensemble des droits découlant des immeubles bâtis ou non bâtis.
                 <br />
                 <br />
-                <h5 className="border-left-2 border-blue title" onClick={() => { toggleText(1)}}>Location immobilière et litige entre bailleur et locataire</h5>
+                <h5 className="border-left-2 border-blue title honoraire-title" onClick={() => { toggleText(1)}}>Location immobilière et litige entre bailleur et locataire</h5>
                 <br />
                 <div id="text-1" className="hidden-h">
                     Si le recours à un avocat n’est pas nécessairement obligatoire, il est cependant très fortement conseillé. Il arrive en effet fréquemment qu’un demandeur soit débouté pour des questions de délais, de pièces manquantes ou de carence de preuve par exemple. L’avocat connait les rouages de la matière et recourir à ses services vous permettra d’optimiser les chances de succès de votre action en justice.
                 </div>
                 <br />
                 <br />
-                <h5 className="border-left-2 border-blue title" onClick={() => { toggleText(2)}}>Les transactions immobilières</h5>
+                <h5 className="border-left-2 border-blue title honoraire-title" onClick={() => { toggleText(2)}}>Les transactions immobilières</h5>
                 <br />
                 <div id="text-2" className="hidden-h">
                     Il n’est pas rare qu’un litige émerge entre le vendeur et l’acheteur lors d’une transaction immobilière.
@@ -30,7 +30,7 @@ const RealEstate = () => {
                 </div>
                 <br />
                 <br />
-                <h5 className="border-left-2 border-blue title" onClick={() => { toggleText(3)}}>Trouble de voisinage</h5>
+                <h5 className="border-left-2 border-blue title honoraire-title" onClick={() => { toggleText(3)}}>Trouble de voisinage</h5>
                 <br />
                 <div id="text-3" className="hidden-h">
                     La vie en société impose à chacun de supporter certains désagréments pouvant être causés par son voisinage.
