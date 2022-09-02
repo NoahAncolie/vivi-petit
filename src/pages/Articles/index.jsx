@@ -6,7 +6,7 @@ const Articles = () => {
     const [articles, setArticles] = useState()
 
     const getArticles = () => {
-        fetch('http://37.187.179.249:3000/articles')
+        fetch('https://database.vivianepetitavocat.fr/articles')
             .then((answer) => { 
                 return answer.json() })
             .then((datas) => { 

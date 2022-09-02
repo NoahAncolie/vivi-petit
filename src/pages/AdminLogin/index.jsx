@@ -10,7 +10,7 @@ const AdminLogin = () => {
     const [newArticle, setRefresh] = useState(1) 
 
     const getArticles = () => {
-        fetch('http://37.187.179.249:3000/articles')
+        fetch('https://database.vivianepetitavocat.fr/articles')
             .then((answer) => {
                 return answer.json()
             })
@@ -29,7 +29,7 @@ const AdminLogin = () => {
 
     const connect = (event) => {
         const datas = Array.from(new FormData(document.getElementById('loginForm')))
-        fetch('http://37.187.179.249:3000/users/sign_in', {
+        fetch('https://database.vivianepetitavocat.fr/users/sign_in', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

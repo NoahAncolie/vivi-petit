@@ -19,7 +19,7 @@ const WritingZone = ({ authorization, refresh }) => {
     }
 
     const saveArticle = () => {
-        fetch('http://37.187.179.249:3000/articles/', {
+        fetch('https://database.vivianepetitavocat.fr/articles/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
