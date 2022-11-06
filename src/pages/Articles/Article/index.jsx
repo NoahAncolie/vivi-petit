@@ -1,3 +1,5 @@
+import { ReactMarkdown } from "react-markdown/lib/react-markdown"
+
 const Article = ({ article }) => {
 
     const toggleContent = () => {
@@ -9,8 +11,12 @@ const Article = ({ article }) => {
 
     return (
         <div key={article.id} className="padding-0-5">
-            <h4 className="article-title" onClick={toggleContent}>{article.name}</h4>
-            <p className="text-justify hidden-h" id={`article-${article.id}-content`}>{article.content}</p>
+            <h4 className="article-title" onClick={toggleContent}><ReactMarkdown>{`# ${article.name}`}</ReactMarkdown></h4>
+            <div className="hidden-h" id={`article-${article.id}-content`}>
+                <ReactMarkdown>
+                    {article.content}
+                </ReactMarkdown>
+            </div>
         </div>
     )
 }
