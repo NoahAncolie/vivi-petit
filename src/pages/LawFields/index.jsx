@@ -33,11 +33,14 @@ const LawFields = () => {
     return (
         <>
             <div className="sm-hidden-h md-hidden-h">
-                <div className="bg bg-light fade-out lg-padding-10 sm-padding-1 md-padding-1" id="page">
+                <div className="bg bg-main fade-out lg-padding-10 sm-padding-1 md-padding-1" id="page">
                     <div className="fixed flex align-center justify-center h-full width-full">
                         <div className="expert-container justify-center">
                             {!isText ?
-                                <img src={centerPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 expert-center-picture grow-h block" />
+                                <div className="law-fields-title-container">
+                                    <h2>Les différentes expertises du droit</h2>
+                                    <img src={centerPicture} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 expert-center-picture grow-h block" />
+                                </div>
                                 :
                                 <div className="expert-overlay">
                                     <div className="expert-text">
@@ -59,7 +62,7 @@ const LawFields = () => {
                     <button className="expert-button text-light" onClick={() => { setCenterPicture(FamilyPicture); setCenterText(Safe) }}><img src={PeopleFighting} alt="drawing-of-a-lawyer" id="center-picture" className="radius-5 block expert-button-img" />Droit des sûretés</button>
                 </div>
             </div>
-            <div className="lg-hidden-h bg-light padding-1-2">
+            <div className="lg-hidden-h bg-main padding-1-2">
                 <div className="border-top border-blue"><RealEstate/></div>
                 <div className="border-top border-blue"><Construction/></div>
                 <div className="border-top border-blue"><Commercial/></div>
