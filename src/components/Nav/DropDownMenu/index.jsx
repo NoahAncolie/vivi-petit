@@ -16,7 +16,8 @@ const DropDownMenu = ({ toggle, JwtUser, stopMusic, playMusic}) => {
                     <Link to={`/`} className={`lg-text-xl width-full hover-text-white text-light ${JwtUser ? "nav-link-purple" : "nav-link"}`} id='lawyer' onClick={() => {toggle(); setToggleHome(); playMusic()}}>Accueil</Link>
                     <Link to="lawyer-fields" className={`lg-text-xl width-full hover-text-white text-light ${JwtUser ? "nav-link-purple" : "nav-link"}`} id='lawyer-fields' onClick={() => { toggle(); stopMusic()}}>Expertises</Link>
                     <Link to="contact" className={`lg-text-xl width-full hover-text-white text-light ${JwtUser ? "nav-link-purple" : "nav-link"}`} id='contact' onClick={() => { toggle(); stopMusic()}}>Contact et informations</Link>
-                    <Link to="articles" className={` lg-text-xl width-full hover-text-white text-light ${JwtUser ? "nav-link-purple" : "nav-link"}`} id='articles' onClick={() => { toggle(); stopMusic()}}>Articles</Link>
+                    {/* <Link to="articles" className={` lg-text-xl width-full hover-text-white text-light ${JwtUser ? "nav-link-purple" : "nav-link"}`} id='articles' onClick={() => { toggle(); stopMusic()}}>Articles</Link> */}
+                    <Link to="rendez-vous" className={` lg-text-xl width-full hover-text-white text-light ${JwtUser ? "nav-link-purple" : "nav-link"}`} id='articles' onClick={() => { toggle(); stopMusic()}}>Prendre rendez-vous</Link>
                 </div>
             </div>
         </div>
