@@ -14,7 +14,7 @@ const Contact = () => {
                     <li>Prendre rendez-vous</li>
                     <li>Laisser des messages</li>
                 </ul>
-                Vous pouvez également me joindre sur mon téléphone portable au 06.95.40.82.72 ou par email sur <a href="mailto:petit.viviane@avocat-conseil.fr" className="link">petit.viviane@avocat-conseil.fr</a>
+                Vous pouvez également me joindre sur mon téléphone portable au 06.95.40.82.72 ou par email sur <a href="mailto:viviane.petit@avocat.fr" className="link">viviane.petit@avocat.fr</a>
                 <br /><br /><br />
                 <h2 className="border-left-2 border-blue title">Venir au cabinet :</h2>
                 Le cabinet est situé 2 Place Michel Ange à 49300 CHOLET, Batiment C.
